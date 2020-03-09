@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      MEMES.COM by Miguel Delgado 2017-5587
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content padding>
+
+  <ion-grid>
+
+<ion-row >
+<ion-col size="6" *ngFor="let imagen of imagenes"> 
+
+
+  <img class="galeria" src="assets/img/{{imagen}}" srcset="" (click)="verImagen(imagen)">
+
+</ion-col>
+
+
+</ion-row>
+
+
+
+  </ion-grid>
+
+
+<button ion-button (clic)= "takephoto()">Tomar foto</button>
+
+ 
+</ion-content>
